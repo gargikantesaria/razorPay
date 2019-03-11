@@ -17,8 +17,8 @@ export class HomePage {
       description: 'Credits towards consultation',
       // image: 'https://i.imgur.com/3g7nmJC.png',
       currency: 'INR',
-      key: 'rzp_test_mgcXD3iQ0yDSVD',
-      amount: this.amount,
+      key: 'YOUR_API_KEY',
+      amount: this.amount * 100,
       name: this.name,
       prefill: {
         email: this.email,
@@ -43,7 +43,7 @@ export class HomePage {
       console.log(error.description + ' (Error ' + error.code + ')');
     };
 
-    RazorpayCheckout.open(options, successCallback, cancelCallback);
+    Razorpay.open(options, successCallback, cancelCallback);
 
     var callApi = (payment_id, amount) => {
       let data = {

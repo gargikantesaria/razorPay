@@ -82,7 +82,6 @@
     <plugin name="cordova-plugin-ionic-webview" spec="1.1.19" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.0.5" />
     <plugin name="cordova-plugin-local-notification" spec="^0.9.0-beta.2" />
-    <plugin name="com.razorpay.cordova" spec="https://github.com/razorpay/razorpay-cordova.git" />
     <engine name="ios" spec="4.5.4" />
-    <engine name="browser" spec="~5.0.4" />
+    <engine name="browser" spec="5.0.4" />
 </widget>
